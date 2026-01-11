@@ -1,4 +1,4 @@
-description: "Qwen Image - GGUF Quantized (Q6_K)"
+description: "Qwen-Image-Edit-2511 GGUF Q4_1"
 source: "https://huggingface.co/city96/Qwen-Image-gguf"
 downloads:
   - url: "https://huggingface.co/unsloth/Qwen-Image-Edit-2511-GGUF/resolve/main/qwen-image-edit-2511-Q4_1.gguf"
