@@ -20,7 +20,7 @@ The compiled file follows this schema:
 version: 1.0
 createdAt: "ISO-8601 Timestamp"
 sources:
-  - name: "model_name"              # Derived from filename
+  model_name:                       # Key derived from filename
     description: "Model description"
     source: "https://..."           # Optional: Source URL (e.g., Civitai/HuggingFace)
     downloads:
@@ -34,9 +34,8 @@ sources:
 {
   "version": 1.0,
   "createdAt": "ISO-8601 Timestamp",
-  "sources": [
-    {
-      "name": "model_name",
+  "sources": {
+    "model_name": {
       "description": "Model description",
       "source": "https://...",
       "downloads": [
@@ -46,7 +45,7 @@ sources:
         }
       ]
     }
-  ]
+  }
 }
 ```
 

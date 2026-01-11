@@ -21,7 +21,7 @@ def main():
     compiled_data = {
         "version": 1.0,
         "createdAt": datetime.datetime.now().isoformat(),
-        "sources": []
+        "sources": {}
     }
     
     # Get all yaml files
@@ -37,13 +37,9 @@ def main():
             if content:
                 # Add name derived from filename (without extension)
                 source_name = yaml_file.stem
-                # Ensure name is the first key if possible, but dicts are ordered in modern python
-                # We'll create a new dict to enforce order if we want, or just add it.
-                # Let's put 'name' at the start for clarity.
-                new_entry = {"name": source_name}
-                new_entry.update(content)
                 
-                compiled_data["sources"].append(new_entry)
+                # Use source_name as key
+                compiled_data["sources"][source_name] = content
         except Exception as e:
             print(f"Error parsing {yaml_file}: {e}")
 
