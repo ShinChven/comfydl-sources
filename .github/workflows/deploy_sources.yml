@@ -1,0 +1,51 @@
+name: Deploy Sources
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install PyYAML
+
+      - name: Compile Sources
+        run: |
+          python compile_sources.py
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          publish_branch: gh-pages
+          keep_files: true
+          # We only want to deploy specific files, but this action deploys a directory.
+          # To avoid deploying everything, let's move the files we want to a folder.
+          
+      - name: Prepare Deployment
+        run: |
+          mkdir public
+          cp sources.json public/
+          cp sources.yaml public/
+          
+      - name: Deploy to GitHub Pages (Specific Dir)
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
