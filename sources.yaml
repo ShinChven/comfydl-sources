@@ -1,5 +1,5 @@
 version: 1.0
-createdAt: '2026-01-11T11:05:07.727675'
+createdAt: '2026-01-11T12:04:58.026147'
 sources:
   chilloutmix:
     description: ChilloutMix (Stable Diffusion 1.5)
@@ -891,18 +891,6 @@ sources:
       dest: models/diffusion_models/qwen_image_edit_2509_fp8_e4m3fn.safetensors
     - url: https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors
       dest: models/vae/qwen_image_vae.safetensors
-  qwen_image_edit_2509_gguf_q6:
-    description: Qwen Image - GGUF Quantized (Q6_K)
-    source: https://huggingface.co/city96/Qwen-Image-gguf
-    downloads:
-    - url: https://huggingface.co/QuantStack/Qwen-Image-Edit-2509-GGUF/resolve/main/Qwen-Image-Edit-2509-Q6_K.gguf?download=true
-      dest: models/unet/Qwen-Image-Edit-2509-Q6_K.gguf
-    - url: https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors
-      dest: models/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors
-    - url: https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors
-      dest: models/vae/qwen_image_vae.safetensors
-    - url: https://huggingface.co/lightx2v/Qwen-Image-Lightning/resolve/main/Qwen-Image-Lightning-8steps-V2.0-bf16.safetensors
-      dest: models/loras/Qwen-Image-Lightning-8steps-V2.0-bf16.safetensors
   qwen_image_edit_2511:
     description: Qwen Image Edit 2.5 11B Model
     source: https://docs.comfy.org/tutorials/image/qwen/qwen-image-edit-2511
@@ -913,6 +901,18 @@ sources:
       dest: models/loras/Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors
     - url: https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_edit_2511_bf16.safetensors
       dest: models/diffusion_models/qwen_image_edit_2511_bf16.safetensors
+    - url: https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors
+      dest: models/vae/qwen_image_vae.safetensors
+  qwen_image_edit_2511_gguf_q2_k:
+    description: Qwen-Image-Edit-2511 GGUF Q2_K
+    source: https://huggingface.co/city96/Qwen-Image-gguf
+    downloads:
+    - url: https://huggingface.co/unsloth/Qwen-Image-Edit-2511-GGUF/resolve/main/qwen-image-edit-2511-Q2_K.gguf
+      dest: models/unet/qwen-image-edit-2511-Q2_K.gguf
+    - url: https://huggingface.co/lightx2v/Qwen-Image-Edit-2511-Lightning/resolve/main/Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors
+      dest: models/loras/Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors
+    - url: https://huggingface.co/Comfy-Org/HunyuanVideo_1.5_repackaged/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors
+      dest: models/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors
     - url: https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors
       dest: models/vae/qwen_image_vae.safetensors
   qwen_image_edit_2511_gguf_q4_1:
