@@ -1,5 +1,5 @@
 version: 1.0
-createdAt: '2026-01-11T12:04:58.026147'
+createdAt: '2026-01-29T07:12:23.254218'
 sources:
   chilloutmix:
     description: ChilloutMix (Stable Diffusion 1.5)
@@ -414,6 +414,46 @@ sources:
     - url: https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/diffusion_models/flux2_dev_fp8mixed.safetensors
       dest: models/diffusion_models/flux2_dev_fp8mixed.safetensors
     - url: https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/vae/flux2-vae.safetensors
+      dest: models/vae/flux2-vae.safetensors
+  flux2_klein_4b:
+    description: Flux 2 Klein 4B Model
+    source: https://blog.comfy.org/p/flux2-klein-4b-fast-local-image-editing
+    downloads:
+    - url: https://huggingface.co/Comfy-Org/flux2-klein-4B/resolve/main/split_files/diffusion_models/flux-2-klein-4b.safetensors
+      dest: models/diffusion_models/flux-2-klein-4b.safetensors
+    - url: https://huggingface.co/Comfy-Org/flux2-klein-4B/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors
+      dest: models/text_encoders/qwen_3_4b.safetensors
+    - url: https://huggingface.co/Comfy-Org/flux2-klein-4B/resolve/main/split_files/vae/flux2-vae.safetensors
+      dest: models/vae/flux2-vae.safetensors
+  flux2_klein_4b_fp8:
+    description: Flux 2 Klein 4B Model (FP8)
+    source: https://blog.comfy.org/p/flux2-klein-4b-fast-local-image-editing
+    downloads:
+    - url: https://huggingface.co/black-forest-labs/FLUX.2-klein-4b-fp8/resolve/main/flux-2-klein-4b-fp8.safetensors
+      dest: models/diffusion_models/flux-2-klein-4b-fp8.safetensors
+    - url: https://huggingface.co/Comfy-Org/flux2-klein-4B/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors
+      dest: models/text_encoders/qwen_3_4b.safetensors
+    - url: https://huggingface.co/Comfy-Org/flux2-klein-4B/resolve/main/split_files/vae/flux2-vae.safetensors
+      dest: models/vae/flux2-vae.safetensors
+  flux2_klein_9b:
+    description: Flux 2 Klein 9B Model
+    source: https://blog.comfy.org/p/flux2-klein-4b-fast-local-image-editing
+    downloads:
+    - url: https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/diffusion_models/flux-2-klein-9b.safetensors
+      dest: models/diffusion_models/flux-2-klein-9b.safetensors
+    - url: https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b.safetensors
+      dest: models/text_encoders/qwen_3_8b.safetensors
+    - url: https://huggingface.co/Comfy-Org/flux2-klein-4B/resolve/main/split_files/vae/flux2-vae.safetensors
+      dest: models/vae/flux2-vae.safetensors
+  flux2_klein_9b_fp8:
+    description: Flux 2 Klein 9B Model (FP8)
+    source: https://blog.comfy.org/p/flux2-klein-4b-fast-local-image-editing
+    downloads:
+    - url: https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-fp8/resolve/main/flux-2-klein-9b-fp8.safetensors
+      dest: models/diffusion_models/flux-2-klein-9b-fp8.safetensors
+    - url: https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b.safetensors
+      dest: models/text_encoders/qwen_3_8b.safetensors
+    - url: https://huggingface.co/Comfy-Org/flux2-klein-4B/resolve/main/split_files/vae/flux2-vae.safetensors
       dest: models/vae/flux2-vae.safetensors
   flux2_quantized:
     description: Download Flux 2 Quantized models
@@ -1217,6 +1257,15 @@ sources:
     - url: https://huggingface.co/htdong/Wan-Alpha_ComfyUI/resolve/main/wan_alpha_2.1_vae_rgb_channel.safetensors.safetensors?download=true
       dest: models/vae/wan_alpha_2.1_vae_rgb_channel.safetensors
   z_image:
+    description: Download Z-Image models
+    downloads:
+    - url: https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors
+      dest: models/text_encoders/qwen_3_4b.safetensors
+    - url: https://huggingface.co/Comfy-Org/z_image/resolve/main/split_files/diffusion_models/z_image_bf16.safetensors
+      dest: models/diffusion_models/z_image_bf16.safetensors
+    - url: https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/vae/ae.safetensors
+      dest: models/vae/ae.safetensors
+  z_image_turbo:
     description: Download Z-Image Turbo models
     downloads:
     - url: https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors
