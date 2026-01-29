@@ -53,7 +53,7 @@ sources:
 
 To add a new model source:
 
-> **Tip**: When asking an AI assistant to create a new source file, reference `@[MODEL_SOURCE.md]` to provide it with the correct format and guidelines.
+> **Tip**: This project includes a Gemini CLI skill to help you manage model sources. If you are using the Gemini CLI, you can simply ask it to "Add a new model source" or "Update the flux model".
 
 1.  Create a new `.yaml` file in the `sources/` directory.
 2.  Define the model metadata and download links (see existing files for examples).
