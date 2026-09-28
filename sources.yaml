@@ -1,5 +1,5 @@
 version: 1.0
-createdAt: '2026-01-29T07:37:49.660707'
+createdAt: '2026-09-28T07:11:54.872885'
 sources:
   chilloutmix:
     description: ChilloutMix (Stable Diffusion 1.5)
@@ -875,6 +875,20 @@ sources:
       dest: models/diffusion_models/qwen_image_2512_fp8_e4m3fn.safetensors
     - url: https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors
       dest: models/vae/qwen_image_vae.safetensors
+  qwen_image_2_1:
+    description: Qwen Image 2.1 (INT8) for image generation and editing, with prompt enhancement
+    source: https://docs.comfy.org/tutorials/image/qwen/qwen-image-2-1
+    downloads:
+    - url: https://huggingface.co/Comfy-Org/Qwen-Image-2.1/resolve/main/text_encoders/qwen3vl_8b_int8_convrot.safetensors
+      dest: models/text_encoders/qwen3vl_8b_int8_convrot.safetensors
+    - url: https://huggingface.co/Comfy-Org/Qwen-Image-2.1/resolve/main/text_encoders/qwen3.5_9b_qwen_image_2.1_pe_t2i.int8_convrot.safetensors
+      dest: models/text_encoders/qwen3.5_9b_qwen_image_2.1_pe_t2i.int8_convrot.safetensors
+    - url: https://huggingface.co/Comfy-Org/Qwen-Image-2.1/resolve/main/text_encoders/qwen3.5_9b_qwen_image_2.1_pe_i2i.int8_convrot.safetensors
+      dest: models/text_encoders/qwen3.5_9b_qwen_image_2.1_pe_i2i.int8_convrot.safetensors
+    - url: https://huggingface.co/Comfy-Org/Qwen-Image-2.1/resolve/main/diffusion_models/qwen_image_2.1_int8_convrot.safetensors
+      dest: models/diffusion_models/qwen_image_2.1_int8_convrot.safetensors
+    - url: https://huggingface.co/Comfy-Org/Qwen-Image-2.1/resolve/main/vae/qwen_image_2.1_vae_bf16.safetensors
+      dest: models/vae/qwen_image_2.1_vae_bf16.safetensors
   qwen_image_controlnet:
     description: Qwen Image ControlNets
     source: https://docs.comfy.org/tutorials/image/qwen/qwen-image
