@@ -1,0 +1,11 @@
+description: "MiniMax-H3-Image (pruned INT8) for text-to-image generation and image editing, with prompt expansion"
+source: "https://docs.comfy.org/tutorials/image/minimax/minimax-h3-image"
+downloads:
+  - url: "https://huggingface.co/Comfy-Org/MiniMax-H3-Image/resolve/main/diffusion_models/minimax_h3_image_pruned_int8_convrot.safetensors"
+    dest: "models/diffusion_models/minimax_h3_image_pruned_int8_convrot.safetensors"
+  - url: "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/text_encoders/qwen3vl_32b_minimax_h3_int8_convrot.safetensors"
+    dest: "models/text_encoders/qwen3vl_32b_minimax_h3_int8_convrot.safetensors"
+  - url: "https://huggingface.co/Comfy-Org/Qwen3.5/resolve/main/text_encoders/qwen3.5_9b_w4a8_gptq.safetensors"
+    dest: "models/text_encoders/qwen3.5_9b_w4a8_gptq.safetensors"
+  - url: "https://huggingface.co/Comfy-Org/MiniMax-H3-Image/resolve/main/vae/minimax_h3_image_vae_fp16.safetensors"
+    dest: "models/vae/minimax_h3_image_vae_fp16.safetensors"
