@@ -1,0 +1,9 @@
+description: "Flux 2 Klein 9B Model (FP8)"
+source: "https://blog.comfy.org/p/flux2-klein-4b-fast-local-image-editing"
+downloads:
+  - url: "https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-fp8/resolve/main/flux-2-klein-9b-fp8.safetensors"
+    dest: "models/diffusion_models/flux-2-klein-9b-fp8.safetensors"
+  - url: "https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b.safetensors"
+    dest: "models/text_encoders/qwen_3_8b.safetensors"
+  - url: "https://huggingface.co/Comfy-Org/flux2-klein-4B/resolve/main/split_files/vae/flux2-vae.safetensors"
+    dest: "models/vae/flux2-vae.safetensors"

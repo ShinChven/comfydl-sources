@@ -1,5 +1,5 @@
 version: 1.0
-createdAt: '2026-09-28T07:11:54.872885'
+createdAt: '2026-11-15T10:17:55.411068'
 sources:
   chilloutmix:
     description: ChilloutMix (Stable Diffusion 1.5)
@@ -813,6 +813,18 @@ sources:
       dest: models/checkpoints/ltx-video-2b-v0.9.5.safetensors
     - url: https://huggingface.co/Comfy-Org/mochi_preview_repackaged/resolve/main/split_files/text_encoders/t5xxl_fp16.safetensors?download=true
       dest: models/text_encoders/t5xxl_fp16.safetensors
+  minimax_h3_image:
+    description: MiniMax-H3-Image (pruned INT8) for text-to-image generation and image editing, with prompt expansion
+    source: https://docs.comfy.org/tutorials/image/minimax/minimax-h3-image
+    downloads:
+    - url: https://huggingface.co/Comfy-Org/MiniMax-H3-Image/resolve/main/diffusion_models/minimax_h3_image_pruned_int8_convrot.safetensors
+      dest: models/diffusion_models/minimax_h3_image_pruned_int8_convrot.safetensors
+    - url: https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/text_encoders/qwen3vl_32b_minimax_h3_int8_convrot.safetensors
+      dest: models/text_encoders/qwen3vl_32b_minimax_h3_int8_convrot.safetensors
+    - url: https://huggingface.co/Comfy-Org/Qwen3.5/resolve/main/text_encoders/qwen3.5_9b_w4a8_gptq.safetensors
+      dest: models/text_encoders/qwen3.5_9b_w4a8_gptq.safetensors
+    - url: https://huggingface.co/Comfy-Org/MiniMax-H3-Image/resolve/main/vae/minimax_h3_image_vae_fp16.safetensors
+      dest: models/vae/minimax_h3_image_vae_fp16.safetensors
   newbie_image:
     description: NewBie-image-Exp0.1 anime-style model (BF16)
     source: https://docs.comfy.org/tutorials/image/newbie-image/newbie-image-exp-0-1
